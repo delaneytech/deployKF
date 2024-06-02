@@ -222,6 +222,10 @@ deploykf_core:
   ##        deploykf-istio-gateway
   ## --------------------------------------
   deploykf_istio_gateway:
+    ## disable the embedded gateway deployment
+    charts:
+      istioGateway:
+        enabled: false
     namespace: deploykf-istio-gateway
 
     ## extra manifests
